@@ -1,0 +1,20 @@
+<section class="experience" role="region" aria-labelledby="exp-title">
+  <div class="panel">
+    <p class="eyebrow">Career</p>
+    <h3 id="exp-title">Experience</h3>
+
+    <mat-vertical-stepper linear class="timeline" labelPosition="end">
+      <ng-container *ngFor="let e of experiences">
+        <mat-step [completed]="true" [label]="e.title">
+          <div class="step-content">
+            <div class="meta">
+              <div class="title">{{ e.title }}</div>
+              <div class="company">{{ e.company }} | <span class="period">{{ e.period }}</span></div>
+            </div>
+            <p class="details">{{ e.details }}</p>
+          </div>
+        </mat-step>
+      </ng-container>
+    </mat-vertical-stepper>
+  </div>
+</section>

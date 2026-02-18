@@ -1,0 +1,50 @@
+:host {
+  display: block;
+  min-height: 100%;
+}
+
+.contact {
+  min-height: 100%;
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(12, 65, 96, 0.16);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(90, 169, 201, 0.12));
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  align-content: center;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #256b8a;
+}
+
+.contact h3 {
+  margin: 8px 0 22px;
+  color: #0c4160;
+  font-size: 1.8rem;
+}
+
+.full {
+  width: 100%;
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button[type="submit"] {
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 700;
+  background: linear-gradient(120deg, #f2a65a, #f7be7e);
+  color: #16364e;
+  box-shadow: var(--shadow-md);
+}

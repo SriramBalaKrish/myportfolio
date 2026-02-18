@@ -1,0 +1,88 @@
+:host {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.page-shell {
+  min-height: 0;
+  overflow: hidden;
+  padding: 18px 20px 10px;
+}
+
+.scroll-icons {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 900;
+  display: grid;
+  gap: 10px;
+}
+
+.scroll-btn {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #0c4160;
+  background: linear-gradient(120deg, #f2a65a, #f7be7e);
+  box-shadow: var(--shadow-md);
+}
+
+.scroll-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+  box-shadow: none;
+}
+
+.app-footer {
+  padding: 22px 20px 28px;
+  border-top: 1px solid rgba(12, 65, 96, 0.14);
+  background: linear-gradient(120deg, rgba(12, 65, 96, 0.08), rgba(242, 166, 90, 0.12));
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: #0c4160;
+}
+
+.footer-content p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #0c4160;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .page-shell {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .scroll-icons {
+    right: 10px;
+    bottom: 92px;
+    top: auto;
+    transform: none;
+  }
+}

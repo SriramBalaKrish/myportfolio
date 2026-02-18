@@ -1,0 +1,117 @@
+.app-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  background: linear-gradient(110deg, rgba(12, 65, 96, 0.96), rgba(37, 107, 138, 0.94));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #f5fbff;
+  border-bottom: 1px solid rgba(242, 166, 90, 0.28);
+  box-shadow: var(--shadow-md);
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  color: #f5fbff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  color: rgba(245, 251, 255, 0.9);
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: #0c4160;
+  background: linear-gradient(120deg, #f2a65a, #f7be7e);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-accent {
+  background: linear-gradient(120deg, #f2a65a, #f7be7e);
+  color: #16364e;
+  border-radius: 999px;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-accent:hover {
+  transform: translateY(-1px);
+}
+
+.mobile-menu {
+  display: none;
+  position: relative;
+}
+
+.mobile-menu summary {
+  list-style: none;
+  cursor: pointer;
+  color: #f5fbff;
+  font-size: 1.4rem;
+  padding: 2px 8px;
+}
+
+.mobile-items {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 200px;
+  margin-top: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(12, 65, 96, 0.98);
+  border: 1px solid rgba(242, 166, 90, 0.28);
+  box-shadow: var(--shadow-md);
+}
+
+.mobile-items a {
+  text-decoration: none;
+  color: #f5fbff;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

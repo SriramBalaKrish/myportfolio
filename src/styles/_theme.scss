@@ -1,0 +1,14 @@
+:root {
+  --primary: #0c4160;
+  --secondary: #5aa9c9;
+  --accent: #f2a65a;
+  --bg: #eef4f8;
+  --surface: #ffffff;
+  --text: #17364a;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}

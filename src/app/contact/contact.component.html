@@ -1,0 +1,25 @@
+<section class="contact" aria-labelledby="contact-title">
+  <p class="eyebrow">Reach Out</p>
+  <h3 id="contact-title">Contact</h3>
+
+  <form class="contact-form" (ngSubmit)="0">
+    <mat-form-field appearance="fill" class="full">
+      <mat-label>Your name</mat-label>
+      <input matInput name="name" placeholder="Name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full">
+      <mat-label>Your email</mat-label>
+      <input matInput name="email" placeholder="you@domain.com" type="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full">
+      <mat-label>Message</mat-label>
+      <textarea matInput name="message" rows="5"></textarea>
+    </mat-form-field>
+
+    <div class="actions">
+      <button mat-raised-button color="primary" type="submit">Send</button>
+    </div>
+  </form>
+</section>

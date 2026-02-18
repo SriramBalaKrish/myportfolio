@@ -1,0 +1,29 @@
+<header class="app-toolbar" role="navigation">
+  <div class="toolbar-left">
+    <a class="brand" routerLink="/">Sriram Balakrishnan</a>
+  </div>
+
+  <div class="toolbar-spacer"></div>
+
+  <nav class="nav-links">
+    <a class="nav-link" routerLink="/about" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+    <a class="nav-link" routerLink="/experience" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Experience</a>
+    <a class="nav-link" routerLink="/skills" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Skills</a>
+    <a class="nav-link" routerLink="/contact" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+    <a class="btn btn-accent" href="/assets/resume/Sriram_Balakrishnan_Resume.pdf" download>
+      <span class="material-icons">file_download</span>
+      Resume
+    </a>
+  </nav>
+
+  <details class="mobile-menu" role="list">
+    <summary aria-label="Open menu">&#9776;</summary>
+    <div class="mobile-items">
+      <a routerLink="/about" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+      <a routerLink="/experience" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Experience</a>
+      <a routerLink="/skills" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Skills</a>
+      <a routerLink="/contact" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+      <a href="/assets/resume/Sriram_Balakrishnan_Resume.pdf" download>Resume</a>
+    </div>
+  </details>
+</header>
