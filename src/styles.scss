@@ -31,14 +31,7 @@ body {
   --shadow-lg: 0 18px 44px rgba(12, 65, 96, 0.16);
 }
 
-body {
-  background:
-    radial-gradient(circle at 18% 20%, rgba(90, 169, 201, 0.2) 0%, transparent 38%),
-    radial-gradient(circle at 84% 12%, rgba(242, 166, 90, 0.2) 0%, transparent 36%),
-    linear-gradient(140deg, #eef4f8, #f8fbfd);
-  color: var(--text);
-  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-}
+
 
 * {
   box-sizing: border-box;
