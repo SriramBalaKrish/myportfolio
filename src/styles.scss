@@ -17,6 +17,8 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+  background: #ffffff;
+  color: var(--text-body);
 }
 
 :root {
@@ -25,7 +27,11 @@ body {
   --accent: #f2a65a;
   --bg: #eef4f8;
   --surface: #ffffff;
-  --text: #17364a;
+  --text: #4a4947;
+  --text-strong: #4a4947;
+  --text-primary: #4a4947;
+  --text-body: #4a4947;
+  --text-muted: #4a4947;
   --shadow-sm: 0 3px 10px rgba(12, 65, 96, 0.08);
   --shadow-md: 0 10px 26px rgba(12, 65, 96, 0.13);
   --shadow-lg: 0 18px 44px rgba(12, 65, 96, 0.16);
